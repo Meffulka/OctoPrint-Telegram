@@ -13,6 +13,12 @@
 		</div>
 	</div>
 	<div class="control-group">
+		<label class="control-label">{{ _('Telegram Proxy setup') }}</label>
+		<div class="controls">
+			<input type="text" class="input-block-level" id="settings_plugin_telegram_proxy_url" data-bind="value: settings.settings.plugins.telegram.proxy_url" />
+		</div>
+	</div>
+	<div class="control-group">
 		<label class="control-label">{{ _('Test Token') }}</label>
 		<div class="controls">
 			<button class="btn" data-bind="click: testToken, disable:isloading()" title="Test the token"><i class="icon-key"></i>&nbsp;Test this token</button>
