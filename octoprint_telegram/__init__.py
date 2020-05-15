@@ -1366,8 +1366,8 @@ class TelegramPlugin(octoprint.plugin.EventHandlerPlugin,
 		self._logger.setLevel(logging.DEBUG if self._settings.get_boolean(["debug"]) else logging.NOTSET)
 
 	def getProxies(self):
-		http_proxy = self._settings.get(["http_proxy"])
-		https_proxy = self._settings.get(["https_proxy"])
+		http_proxy = self._settings.get(["proxy_url"])
+		https_proxy = self._settings.get(["proxy_url"])
 		return {
 			'http': http_proxy,
 			'https': https_proxy
